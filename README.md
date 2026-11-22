@@ -14,7 +14,7 @@ Trial-normalized time input, `t / (T - 1)`. The stills show rest, reach, grasp, 
 
 ![V1 GRU: reference movement in the top row and decoded movement in the bottom row, across five phases of a held-out trial](assets/v1_replay_side_view.png)
 
-![Animated V1 replay, with the reference movement on the left and decoded movement on the right](assets/v1_replay_animation.gif)
+![Animated V1 replay, with the reference movement on the left and decoded movement on the right](v1_replay_animation.gif)
 
 ### V2: LFADS-lite with object context
 
