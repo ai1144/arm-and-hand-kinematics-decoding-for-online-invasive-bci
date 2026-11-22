@@ -1,18 +1,18 @@
 # Arm and Hand Kinematics Decoding for Online Invasive BCI
 
-Master's thesis source code by **Anita Iotti** for decoding hand and arm kinematics from intracortical neural recordings.
+Master's thesis source code by **Anita Iotti** (me) for decoding hand and arm kinematics from intracortical neural recordings.
 
-The project compares linear and neural decoders for 32 joint coordinates, evaluates generalization across held-out trials, movements, recording blocks and sessions, and visualizes reference and decoded movements in MuJoCo.
+The project compares linear and non-linear neural decoders for 32 joint coordinates, evaluates generalization across held-out trials, movements, recording blocks and sessions, and visualizes reference and decoded movements in MuJoCo.
 
 ## Reference and decoded movement
 
-The thesis figures below compare the **prescribed reference trajectory** in orange with the **decoded trajectory** in cyan. Both trajectories are replayed through the same simulated arm and hand. The reference is the movement presented to the participant, rather than a measurement of the participant's limb. These are offline replays of held-out test trials.
+The thesis figures below compare the **prescribed reference trajectory** in orange with the **decoded trajectory** in cyan. Both trajectories are replayed through the same simulated arm and hand. The reference is the movement presented to the participant, rather than a measurement of the participant's limb. These are replays of held-out test trials.
 
 ### V1: GRU with object context
 
 Trial-normalized time input, `t / (T - 1)`. The stills show rest, reach, grasp, hold and return for a held-out large vertical cylinder trial.
 
-![V1 GRU: reference movement in the top row and decoded movement in the bottom row, across five phases of a held-out trial](assets/v1_replay_side_view.png)
+![V1 GRU: reference movement in the top row and decoded movement in the bottom row, across five phases of a held-out trial](v1_replay_side_view.png)
 
 ![Animated V1 replay, with the reference movement on the left and decoded movement on the right](v1_replay_animation.gif)
 
@@ -20,9 +20,9 @@ Trial-normalized time input, `t / (T - 1)`. The stills show rest, reach, grasp, 
 
 Fixed onset time input, `t / 600`, corresponding to a six-second clock at 100 Hz. The same trial and visualization layout are used for comparison.
 
-![V2 LFADS-lite: reference movement in the top row and decoded movement in the bottom row, across five phases of a held-out trial](assets/v2_replay_side_view.png)
+![V2 LFADS-lite: reference movement in the top row and decoded movement in the bottom row, across five phases of a held-out trial](v2_replay_side_view.png)
 
-![Animated V2 replay, with the reference movement on the left and decoded movement on the right](assets/v2_replay_animation.gif)
+![Animated V2 replay, with the reference movement on the left and decoded movement on the right](v2_replay_animation.gif)
 
 ## What the code covers
 
